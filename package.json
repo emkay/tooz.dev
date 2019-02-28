@@ -1,0 +1,23 @@
+{
+  "name": "tooz.dev",
+  "version": "1.0.0",
+  "description": "tooz.dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emkay/tooz.dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emkay/tooz.dev/issues"
+  },
+  "homepage": "https://github.com/emkay/tooz.dev#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1"
+  }
+}
