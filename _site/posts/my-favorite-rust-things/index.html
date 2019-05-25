@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="&lt;p&gt;These are my favorite Rust things. In no particular order.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Immutable variables by default&lt;/li&gt;
+&lt;li&gt;Cargo&lt;/li&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;li&gt;Compiler errors&lt;/li&gt;
+&lt;li&gt;WebAssembly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Immutable Variables by Default&lt;/h2&gt;
+&lt;p&gt;You have to...">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+    <link rel="stylesheet" href="/highlight.css">
+    <title>My Favorite Rust Things</title>
+  </head>
+  <body class="fl w-100 sans-serif">
+    <main class="fl w-100">
+      <article class="vh-100 dt w-100">
+        <div class="dtc tc white ph3 ph4-l">
+          <header class="navy f6">
+            <h1 class="f4-m f-subheadline-l fw6 tc baskerville"><a class="navy link hover-light-pink" href="/">tooz.dev</a></h1>
+            <h2 class="f7 fw7 ttu tracked lh-title mt0 mb3 avenir">Sat, 25 May 2019 16:20:00 GMT</h2>
+          </header>
+				</div>
+        <article class="pa3 pa5-ns">
+          <header>
+            <h1 class="f3 f1-m f-headline-l">My Favorite Rust Things
+          </header>
+          <div class="f3 measure lh-copy">
+            <p>These are my favorite Rust things. In no particular order.</p>
+<ul>
+<li>Immutable variables by default</li>
+<li>Cargo</li>
+<li>Documentation</li>
+<li>Compiler errors</li>
+<li>WebAssembly</li>
+</ul>
+<h2>Immutable Variables by Default</h2>
+<p>You have to tell the compiler that a variable is mutable by using <code>mut</code>.</p>
+<pre class="language-rust"><code class="language-rust"><span class="highlight-line"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">420</span><span class="token punctuation">;</span></span><br><span class="highlight-line">num <span class="token operator">=</span> <span class="token number">421</span><span class="token punctuation">;</span> <span class="token comment">// nope</span></span></code></pre>
+<p>If you try and do this the compiler will let you know that you cannot reassign the variable.</p>
+<p>Instead you can do this:</p>
+<pre class="language-rust"><code class="language-rust"><span class="highlight-line"><span class="token keyword">let</span> <span class="token keyword">mut</span> num <span class="token operator">=</span> <span class="token number">420</span><span class="token punctuation">;</span></span><br><span class="highlight-line">num <span class="token operator">=</span> <span class="token number">421</span><span class="token punctuation">;</span> <span class="token comment">// yep!</span></span></code></pre>
+<h2>Cargo</h2>
+<p>Cargo is the super rad package manager that allows you to compile, run tests, create documentation, install binaries from <a href="https://crates.io/" class="blue link hover-light-pink">crates.io</a>, and manage your dependencies in your package.</p>
+<p>A couple weeks ago I learned that you can install <a class="blue link hover-light-pink" href="https://github.com/killercup/cargo-edit"><code>cargo-edit</code></a> and manage your dependencies similar to how you would with <code>npm</code>. It allows you to do things like:</p>
+<pre class="language-bash"><code class="language-bash"><span class="highlight-line">cargo <span class="token function">add</span> diesel</span></code></pre>
+<p>Then it will automatically add it to your <code>Cargo.toml</code> file. Pretty cool.</p>
+<h2>Documentation</h2>
+<p>The official documentation in Rust is amazing. It is rad to see first class documentation, and it is easier to create first class documentation with <a href="https://doc.rust-lang.org/rustdoc/" class="blue link hover-light-pink"><code>rustdoc</code></a>. It is very nice to be able to write docs in code. <code>cargo doc</code> does a great job of just setting some defaults and running <code>rustdoc</code> for you. The docs produced are pretty helpful.</p>
+<h2>Compiler Errors</h2>
+<p>The compiler errors can be annoying at first. After a while though they are pretty great. They are often very helpful and can tell you almost exactly what you are doing wrong. I'm still getting a tiny bit annoyed at borrowing and lifetime errors, but I expect once I get a better hang of those they will be better.</p>
+<h2>WebAssembly</h2>
+<p>Rust supports WebAssembly as a compile target. This means we can get Rust code running in browsers!</p>
+<p>There is a great little book <a href="https://rustwasm.github.io/docs/book/" class="blue link hover-light-pink">Rust 🦀 and WebAssembly 🕸</a> that goes into detail. You end up building <em>Conway's Game of Life</em> in Rust and compiling down to <code>wasm</code>. Then you can load it up with some js.</p>
+<p>I've only done that much with this, but thinking about the possibilities is pretty exciting.</p>
+<p>Going to end there for now. There are a lot more things I like.</p>
+
+          </div>
+				</article>
+      </article>
+    </main>
+  </body>
+</html>

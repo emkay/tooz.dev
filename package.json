@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/emkay/tooz.dev#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.8.3"
+    "@11ty/eleventy": "^0.8.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3"
   },
   "dependencies": {}
 }
