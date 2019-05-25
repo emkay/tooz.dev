@@ -9,26 +9,21 @@
   <body class="fl w-100 sans-serif">
     <main class="fl w-100">
       <article class="vh-100 dt w-100">
-        <div class="dtc v-mid tc white ph3 ph4-l">
-          <h1 class="navy f6 f4-m f-subheadline-l fw6 tc baskerville">tooz.dev</h1>
+        <div class="dtc tc white ph3 ph4-l">
+          <header class="navy f6">
+            <h1 class="f4-m f-subheadline-l fw6 tc baskerville">tooz.dev</h1>
+            <h2 class="f7 fw7 ttu tracked lh-title mt0 mb3 avenir">{{page.date}}</h2>
+          </header>
 				</div>
-				<article class="pa3 pa5-ns">
-					<h1 class="f3 f1-m f-headline-l">Title</h1>
-					<p class="measure lh-copy">
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-					tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-					vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-					no sea takimata sanctus est Lorem ipsum dolor sit amet.
-					</p>
-					<p class="measure lh-copy">
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-					tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-					vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-					no sea takimata sanctus est Lorem ipsum dolor sit amet.
-					</p>
+        <article class="pa3 pa5-ns">
+          <header>
+            <h1 class="f3 f1-m f-headline-l">{{title}}
+          </header>
+          <div class="f3 measure lh-copy">
+            {{ content | safe }}
+          </div>
 				</article>
       </article>
-      {{ content | safe }}
     </main>
   </body>
 </html>
