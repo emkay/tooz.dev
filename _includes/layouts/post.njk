@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="{{content | truncate()}}">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+    <link rel="stylesheet" href="/highlight.css">
     <title>{{title}}</title>
   </head>
   <body class="fl w-100 sans-serif">
@@ -12,7 +14,7 @@
         <div class="dtc tc white ph3 ph4-l">
           <header class="navy f6">
             <h1 class="f4-m f-subheadline-l fw6 tc baskerville"><a class="navy link hover-light-pink" href="/">tooz.dev</a></h1>
-            <h2 class="f7 fw7 ttu tracked lh-title mt0 mb3 avenir">{{page.date}}</h2>
+            <h2 class="f7 fw7 ttu tracked lh-title mt0 mb3 avenir">{{page.date.toUTCString()}}</h2>
           </header>
 				</div>
         <article class="pa3 pa5-ns">

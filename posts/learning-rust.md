@@ -1,7 +1,7 @@
 ---
 title: Learning Rust
 tags: post
-date: Last Modified
+date: 2019-05-24 16:20:00Z
 linkClass: blue link hover-light-pink
 layout: layouts/post.njk
 ---
