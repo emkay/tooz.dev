@@ -1,5 +1,6 @@
 ---
 title: Learning Rust
+tags: post
 date: Last Modified
 linkClass: blue link hover-light-pink
 layout: layouts/post.njk

@@ -11,6 +11,11 @@
       <section class="vh-100 dt w-100">
         <div class="dtc v-mid tc white ph3 ph4-l">
           <h1 class="navy f6 f4-m f-subheadline-l fw6 tc baskerville">tooz.dev</h1>
+          <ul>
+            {%- for post in collections.post -%}
+            <li><a class="blue link hover-light-pink" href="{{post.url}}">{{ post.data.title }}</a></li>
+            {%- endfor -%}
+          </ul>
         </div>
       </section>
     </main>
