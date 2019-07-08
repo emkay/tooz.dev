@@ -67,9 +67,9 @@ The aftermath of the interview should involve each pair of interviewers to write
 
 ## Metrics
 
-We are probably already doing some of this. Collect metrics on everything. Feedback, has already been talked about. Our friends in recruiting probably have very valuable metrics.
+Collect metrics on everything about the process. Your friends in recruiting probably have very valuable metrics.
 
-Some metrics we should be interested in:
+Some metrics you should be interested in:
 
 * sourcing vs direct applicants vs referral (referrals can be great, but can also prevent diversity of candidates)
 * how many interviews is each interviewer doing per week? (are they doing too many? Interviews can be taxing on both sides of the table)
