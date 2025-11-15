@@ -13,7 +13,7 @@
         <div class="dtc v-mid tc white ph3 ph4-l">
           <h1 class="f4-m f-subheadline-l fw6 tc baskerville"><a class="navy link hover-light-pink" href="/">tooz.dev</a></h1>
           <ul>
-            {%- for post in collections.post -%}
+            {%- for post in collections.post | reverse -%}
             <li><a class="blue link hover-light-pink" href="{{post.url}}">{{ post.data.title }}</a></li>
             {%- endfor -%}
 
