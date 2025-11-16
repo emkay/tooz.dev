@@ -12,5 +12,5 @@ Hi! My name is __Michael Matuzak__. Going to use this site as a sort of develope
 
 I also have a bookmarking site with a bunch of links and a wiki:
 
-https://links.tooz.dev/
-https://wiki.tooz.dev/
+* <a class={{linkClass}} href="https://links.tooz.dev/">Links</a>
+* <a class={{linkClass}} href="https://wiki.tooz.dev/">Wiki</a>
