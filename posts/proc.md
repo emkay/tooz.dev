@@ -8,6 +8,9 @@ layout: layouts/post.njk
 
 The operating system was meant to execute programs and a _process_ is an instance of an executing program. In Linux the `/proc` directory contains information about processes that are running. Each process running has a subdirectory that is the PID of the process.
 
+This PID is a positive integer and it is a unique identifier of a process on the system. It is associated with the parent that created the process by PPID (parent process identifier). All processes have a common ancestor `init` or PID 1. This creats a tree of processes that can be viewed by using the tool `pstree`.
+
+## `/proc` Contents
 Inside will look something like this:
 
 ```text
@@ -30,6 +33,8 @@ mountinfo  numa_maps	personality
 sessionid   stat		timens_offsets
 
 ```
+
+## `stat` and `status`
 
 The two files I want to focus on right now is `stat` and `status`. As I understand it they contain about the same information, but `status` is a more human readable form.
 
@@ -168,5 +173,7 @@ let entries: Vec<_> = fs::read_dir("/proc")?
         println!("{}", values.join("\t"));
     }
 ```
+
+<a href="https://docs.kernel.org/filesystems/proc.html" class="{{linkClass}}">/proc docs</a>
 
 Going to keep diving deep into `/proc` and learning about processes in general. Party hard!
