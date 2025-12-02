@@ -8,7 +8,7 @@ layout: layouts/post.njk
 
 The operating system was meant to execute programs and a _process_ is an instance of an executing program. In Linux the `/proc` directory contains information about processes that are running. Each process running has a subdirectory that is the PID of the process.
 
-This PID is a positive integer and it is a unique identifier of a process on the system. It is associated with the parent that created the process by PPID (parent process identifier). All processes have a common ancestor `init` or PID 1. This creats a tree of processes that can be viewed by using the tool `pstree`.
+This PID is a positive integer and it is a unique identifier of a process on the system. It is associated with the parent that created the process by PPID (parent process identifier). All processes have a common ancestor `init` or PID 1. This creates a tree of processes that can be viewed by using the tool `pstree`.
 
 ## `/proc` Contents
 Inside will look something like this:
